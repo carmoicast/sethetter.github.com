@@ -6,7 +6,7 @@ layout: default
 		
 	<header class="article-header">
 		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-		  <p class="postdate">{{ post.date | date: "%d %B %Y" }} - Posted in: {% for category in post.categories %} {{ category }}, {% endfor %}</p>
+		  <p class="postdate">{{ page.date | date: "%d %B %Y" }} - Posted in: {% for category in page.categories %} {{ category }}, {% endfor %}</p>
 	</header>
 		
 	{{ content }}
