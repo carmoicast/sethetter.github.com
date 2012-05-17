@@ -57,7 +57,7 @@ nav {
   padding:10px;
   width:100%;
   @include border-radius();
-  margin-bottom:0;
+  margin-bottom:10px;
   @include background-image(linear-gradient(lighten($text-color, 20%), lighten($text-color, 5%)));
   ul { margin:0; padding:0; }
   li {
@@ -93,7 +93,6 @@ nav {
     font-style:italic;
     margin:5px 0 0 0;
     padding:0;
-    float:right;
   }
 }
 

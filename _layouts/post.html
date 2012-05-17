@@ -6,8 +6,7 @@ layout: default
 		
 	<header class="article-header">
 		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-      <p class="postcategories">{{ post.categories }}</p>
-      <p class="postdate">{{ page.date | date: "%d %B %Y" }}</p>
+		  <p class="postdate">{{ post.date | date: "%d %B %Y" }} - Posted in: {{ post.categories.join(", ") }}</p>
 	</header>
 		
 	{{ content }}
