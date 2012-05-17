@@ -87,6 +87,14 @@ nav {
     margin:5px 0 0 0;
     padding:0;
   }
+  .postcategories {
+    font-size:0.8em;
+    color:lighten($text-color, 15%);
+    font-style:italic;
+    margin:5px 0 0 0;
+    padding:0;
+    float:right;
+  }
 }
 
 #content-section {
@@ -104,6 +112,9 @@ nav {
   li { list-style:none; display:inline; padding:0; }
   a { @include link-colors($background-color, darken($background-color, 10%), darken($background-color, 10%), $background-color, darken($background-color, 10%)); }
 }
+
+// Utility
+.float-right { float:right; }
 
 // Syntax Highlighting
 
