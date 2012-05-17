@@ -59,7 +59,7 @@ nav {
   @include border-radius();
   margin-bottom:10px;
   @include background-image(linear-gradient(lighten($text-color, 20%), lighten($text-color, 5%)));
-  ul { margin:0; padding:0 5px 0 0; }
+  ul { margin:0; padding:0 10px 0 0; }
   li {
     display:inline;
     list-style:none;
