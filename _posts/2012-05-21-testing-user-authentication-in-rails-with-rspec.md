@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing User Authentication in Rails with RSpec
-categories: ruby, ruby on rails, testing, rspec
+categories: [ ruby, ruby on rails, testing, rspec ]
 ---
 Test driven development is something I've been meaning to integrate into my workflow for some time now. I know this is the situation with a lot of developers out there, so I'm writing a series of posts outlining how to develop a basic application in a test driven format. The application I'll be building is a personal journaling application that will employ the use of Rails for a back end, and Backbone.js on the front end interaction.
 
