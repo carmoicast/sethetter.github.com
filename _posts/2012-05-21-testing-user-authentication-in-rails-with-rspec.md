@@ -3,6 +3,7 @@ layout: post
 title: Testing User Authentication in Rails with RSpec
 categories: [ ruby, ruby on rails, testing, rspec ]
 ---
+
 Test driven development is something I've been meaning to integrate into my workflow for some time now. I know this is the situation with a lot of developers out there, so I'm writing a series of posts outlining how to develop a basic application in a test driven format. The application I'll be building is a personal journaling application that will employ the use of Rails for a back end, and Backbone.js on the front end interaction.
 
 I plan to build and test the front end Backbone application in a test driven manner as well and will be writing that post (or posts) following this one. The project will be hosted in my [Github account](http://github.com/sethetter) for those who wish to reference the source code. Now let's get started.
@@ -180,13 +181,13 @@ class User < ActiveRecord::Base
   validates_presence_of :username, :password, :password_confirmation
   validates_uniqueness_of :username
 end
-{% end highlight %}
+{% endhighlight %}
 
 # Testing User Authentication
 
 We have created our user resource and tested the validation of our attributes, including the match between password and password_confirmation upon creation. The next thing we need to test is that our password is successfully encrypted to password_digest, and that our `authenticate` method works as it should.
 
-{% highlight ruby%}
+{% highlight ruby %}
 # spec/models/user_spec.rb
 
 context "with a successfully created user" do
@@ -272,7 +273,7 @@ class UsersController < ApplicationController
     end
   end
 end
-{% end highlight %}
+{% endhighlight %}
 
 You'll notice that we are rendering views that we haven't created yet: `session/show` and `session/new`. In order for rails to issue a response code of 200, those view files need to exist, so let's go ahead and generate the session controller which will create the views for us. We'll also want to clean up a few unwanted files as well. 
 
@@ -464,7 +465,7 @@ end
 
 We just need to create a view for our root url that shows a login form and a registration form so we can actually open our app and test it out. This will be located at `app/views/session/new.html.erb`.
 
-{% highlight erb %}
+{% highlight html %}
 # app/views/session/new.html.erb
 
 <div id="login">
@@ -504,7 +505,7 @@ We just need to create a view for our root url that shows a login form and a reg
 
 We also want to be able to display flash notices and errors, so we will alter our main application view wrapper as follows:
 
-{% highlight erb %}
+{% highlight html %}
 # app/views/layouts/application.html.erb
 
 <!DOCTYPE html>
