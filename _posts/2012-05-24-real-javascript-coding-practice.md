@@ -22,7 +22,7 @@ Javascript Koans is very similar to the JS-Assessment. There a different 'koans'
 
 One of the awesome things about Javascript Koans is the ability to use the [Cloud9 IDE](http://c9.io/) plus this project to practice and learn Javacsript [entirely in the cloud](http://blog.bittersweetryan.com/2011/08/learn-some-javascript-completely-on.html)! Seems pretty cool.
 
-# [Code Academy](http://www.codecademy.com/) by Zach Sims and Ryan Bubinski
+# [Code Academy](http://www.codecademy.com/) - Zach Sims and Ryan Bubinski
 
 A new approach to development education (and education in general) is taking a huge turn at this moment in time. Code Academy is a new idea by Zach Sims and Ryan Bubinski that gives you the ability to follow course directions in the browser to learn various coding topics. Currently in early stages, the available classes are on [HTML & CSS](http://www.codecademy.com/tracks/web) and, yes, [Javascript](http://www.codecademy.com/tracks/javascript).
 
