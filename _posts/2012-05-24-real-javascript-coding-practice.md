@@ -10,13 +10,13 @@ Personal projects are a great way to keep yourself working on something, but I p
 
 But you don't want to get stuck with no practice while you wait for an idea you're really pumped about, right? I know I don't. I've come across some resources available to help give you some real coding experience and practice with Javascript without having to create your own projects.
 
-# [JS-Assessment](https://github.com/rmurphey/js-assessment) by [Rebecca Murphey](http://rmurphey.com/)
+# [JS-Assessment](https://github.com/rmurphey/js-assessment) - [Rebecca Murphey](http://rmurphey.com/)
 
 This particular resource is one of the most beneficial I've come across. The JS-Assessment is a list of topics within Javascript that each developer should know and understand well. There is a test file with prewritten assertions that you must make pass in the code. You are given blank function wrappers that you fill in to make the tests go green.
 
 The great thing about JS-Assessment is that it's not any simple fill in the blank type answers. It requires you to programmatically solve each of the outcomes that the tests require. Not only does this make it a bit more challenging, but it gives you experience working with the concepts in Javascript that are going to make you a great developer.
 
-# [Javascript Koans](https://github.com/liammclennan/JavaScript-Koans) by [Liam McLennan](http://hackingon.net/)
+# [Javascript Koans](https://github.com/liammclennan/JavaScript-Koans) - [Liam McLennan](http://hackingon.net/)
 
 Javascript Koans is very similar to the JS-Assessment. There a different 'koans' for many programming languages ([ruby koans](http://rubykoans.com/)), this particular set is for the Javascript language. You are given a set of problems over various topics that have test prewritten for them. You have to correct the code to make the test pass. The main difference here is that there is less code for you to fill in to make each test pass.
 
@@ -28,7 +28,7 @@ A new approach to development education (and education in general) is taking a h
 
 Other sites like this exist, but few of matching quality, and few that are equally *free* of charge. The lesson plans are fantastic and even include intermittent projects like creating a blackjack card game using Javascript. For a classroom like format and no cost at all, Code Academy has a lot to offer.
 
-# [Code School](http://www.codeschool.com) by [Envy Labs](http://envylabs.com/)
+# [Code School](http://www.codeschool.com) - [Envy Labs](http://envylabs.com/)
 
 This one is a lot like Code Academy, except the courses available do require you to either buy the course or have an active Code School membership. Now I am not typically one to *want* to pay for services, but for the amount of material and the extremely high quality thereof I could not pass up this great offer.
 
