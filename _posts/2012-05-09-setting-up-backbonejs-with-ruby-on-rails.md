@@ -255,11 +255,10 @@ BackboneExample.Views.PostsIndex = Backbone.View.extend({
       wait: false,
       success: function() {
         $('#new-post')[0].reset();
+        this.collection.trigger('reset');
       },
       error: this.handleError
     });
-    
-    this.collection.trigger('reset');
   },
 
   removePost: function(event) {
@@ -298,6 +297,8 @@ At the top we have an `events` object that accepts key/value pairs of what event
 Under our `createPost` function is our `removePost` function. We also have a reference to this function within our `events` object that allows it to be triggered by clicking on the link with the class of `remove-post`. The function we call simply finds the `id` of the target link that is clicked, which we populat in our template with the corresponding post id. It then uses this id to make a `destroy` call to our backbone app, which does the same to the server.
 
 Lastly we have a `handleError` function that does as it is named: handles errors. If we are returned an error, and the status code is 422 (Unprocessable Entity) then we launch an alert box for each of errors returned on a given attribute.
+
+**Edit:** CosmicCat pointed out [in the comments](http://italktoomuch.com/2012/05/setting-up-backbonejs-with-ruby-on-rails/#comment-547399608) that the view rendered before obtaining the id from the server, so we needed to move the `reset` event trigger into the success call of our create request.
 
 ## Creating the template
 
